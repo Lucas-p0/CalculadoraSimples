@@ -6,11 +6,13 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             Console.WriteLine("Escolha uma das operações:");
             Console.WriteLine("1 - Soma");
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Divisão");
             Console.WriteLine("4 - Multiplicaçao");
+            Console.WriteLine("--------------------------");
             float operador = float.Parse(Console.ReadLine());
 
             switch (operador)
@@ -34,6 +36,7 @@ namespace Calculadora
         static void Soma()
         {
             Console.Clear();
+            Console.WriteLine("1 - Soma");
             Console.WriteLine("Digite o primeiro valor:");
             float primeiroValor = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo valor:");
@@ -49,6 +52,7 @@ namespace Calculadora
         static void Subtracao()
         {
             Console.Clear();
+            Console.WriteLine("2 - Subtração");
             Console.WriteLine("Digite o primeiro valor:");
             float primeiroValor = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo valor:");
@@ -64,6 +68,7 @@ namespace Calculadora
         static void Divisao()
         {
             Console.Clear();
+            Console.WriteLine("3 - Divisão");
             Console.WriteLine("Digite o primeiro valor:");
             float primeiroValor = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo valor:");
@@ -79,6 +84,7 @@ namespace Calculadora
         static void Multiplicacao()
         {
             Console.Clear();
+            Console.WriteLine("4 - Multiplicaçao");
             Console.WriteLine("Digite o primeiro valor:");
             float primeiroValor = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo valor:");
