@@ -6,12 +6,22 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
+
+            Menu();
+
+        }
+
+
+
+        static void Menu()
+        {
             Console.Clear();
             Console.WriteLine("Escolha uma das operações:");
             Console.WriteLine("1 - Soma");
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Divisão");
             Console.WriteLine("4 - Multiplicaçao");
+            Console.WriteLine("5 - Sair");
             Console.WriteLine("--------------------------");
             float operador = float.Parse(Console.ReadLine());
 
@@ -29,10 +39,15 @@ namespace Calculadora
                 case 4:
                     Multiplicacao();
                     break;
+                case 5:
+                    System.Environment.Exit(0);
+                    break;
+                default:
+                    Menu();
+                    break;
 
             }
         }
-
         static void Soma()
         {
             Console.Clear();
